@@ -6,7 +6,7 @@
 //Sets, Parameters, Variables etc.
                 { "trigger": "SET name /definition/;", "contents": "SET ${1:setname} /${2:definition}/;" },
                 { "trigger": "ALIAS(x,xx);", "contents": "ALIAS ($1,$2);" },
-                { "trigger": "SCALAR name //;", "contents": "SCALAR ${1:name} /${2:value}/"},
+                { "trigger": "SCALAR name /value/;", "contents": "SCALAR ${1:name} /${2:value}/"},
                 { "trigger": "PARAMETER name;", "contents": "PARAMETER $0;"},
                 { "trigger": "TABLE name;", "contents": "TABLE ${1:name}\n${2:definition}\n;" },
                 { "trigger": "VARIABLE name;", "contents": "VARIABLE ${1:name};" },
